@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import app from './firebase'
+import AddTask from "./AddTask";
+import TaskList from "./TaskList";
 
-function App() {
- 
+const App = () => {
   return (
-    <>
-      
-    </>
-  )
-}
+    <div>
+      <h1>Task Manager</h1>
+      <h2>Task List</h2>
+      <TaskList />
+      <AddTask />
 
-export default App
+    </div>
+  );
+};
+
+export default App;
